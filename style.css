@@ -1,5 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-size: 16px;
   height: 1080px;
   width: 1920px;
-  outline: 1px solid red;
+  /* background-image: url("./guide.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 6fr 8fr;
+  height: 1080px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1080px;
+  padding: 5rem 0;
+}
+
+.left {
+  justify-self: flex-end;
+}
+.right {
+  justify-self: flex-start;
+}
+
+.name {
+  font-size: 32px;
+  padding: 0.5rem 1rem;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 1rem;
+  width: max-content;
 }

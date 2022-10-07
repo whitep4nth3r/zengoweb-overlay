@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+header {
+  position: absolute;
+}
+
+.pancake {
+  font-size: 4rem;
+}
+
 body {
   font-size: 16px;
   height: 1080px;
@@ -28,17 +36,34 @@ body {
 }
 
 .left {
+  align-items: flex-end;
   justify-self: flex-end;
 }
 .right {
+  align-items: flex-start;
   justify-self: flex-start;
 }
 
 .name {
   font-size: 32px;
   padding: 0.5rem 1rem;
-  background-color: blueviolet;
+  background-image: linear-gradient(45deg, #38b5aa, #008acd 100%);
   color: white;
   border-radius: 1rem;
   width: max-content;
+}
+
+.pikktorr {
+}
+.kappa {
+}
+.endotrip {
+}
+.marotihanna {
+}
+
+.rannien {
+}
+
+.eetier {
 }

@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-header {
-  position: absolute;
-}
-
-.pancake {
-  font-size: 4rem;
-}
-
 body {
   font-size: 16px;
   height: 1080px;
@@ -45,12 +37,34 @@ body {
 }
 
 .name {
+  --display: none;
   font-size: 32px;
   padding: 0.5rem 1rem;
   background-image: linear-gradient(45deg, #38b5aa, #008acd 100%);
   color: white;
   border-radius: 1rem;
   width: max-content;
+  position: relative;
+}
+
+.left .name::before {
+  content: "🥞";
+  font-size: 42px;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  transform: rotate(-15deg);
+  display: var(--display);
+}
+
+.right .name::after {
+  content: "🥞";
+  font-size: 42px;
+  position: absolute;
+  right: -2rem;
+  top: 0;
+  transform: rotate(15deg);
+  display: var(--display);
 }
 
 .pikktorr {

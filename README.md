@@ -1,6 +1,6 @@
 # ZengoWeb character stream overlay
 
-## Instructions for use
+## Instructions for use
 
 Add the following URL as a 1920 x 1080px browser source to OBS.
 

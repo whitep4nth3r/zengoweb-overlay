@@ -1,5 +1,7 @@
 # ZengoWeb character stream overlay
 
+[👀 Watch live](https://www.twitch.tv/zengoweb)
+
 ## Instructions for use
 
 Add the following URL as a 1920 x 1080px browser source to OBS.

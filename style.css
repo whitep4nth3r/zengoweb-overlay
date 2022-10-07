@@ -6,15 +6,12 @@ body {
   font-size: 16px;
   height: 1080px;
   width: 1920px;
-  /* background-image: url("./guide.png");
-  background-size: contain;
-  background-repeat: no-repeat; */
   font-family: "Figtree", sans-serif;
 }
 
 .container {
   display: grid;
-  gap: 32px;
+  gap: 60px;
   grid-template-columns: 6fr 8fr;
   height: 1080px;
 }
@@ -67,17 +64,22 @@ body {
   display: var(--display);
 }
 
-.pikktorr {
-}
-.kappa {
-}
-.endotrip {
-}
-.marotihanna {
-}
-
-.rannien {
+.left .name[data-wfh]::after {
+  content: "🏡";
+  font-size: 42px;
+  position: absolute;
+  right: -26px;
+  top: 0;
+  transform: rotate(15deg);
+  display: block;
 }
 
-.eetier {
+.right .name[data-wfh]::before {
+  content: "🏡";
+  font-size: 42px;
+  position: absolute;
+  left: -32px;
+  top: 0;
+  transform: rotate(-15deg);
+  display: block;
 }

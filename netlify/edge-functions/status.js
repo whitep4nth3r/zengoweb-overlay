@@ -2,7 +2,8 @@ export default async (request, context) => {
   const url = new URL(request.url);
 
   const params = url.searchParams.get("wfh");
-  const wfh = params.split(",");
+
+  const wfh = params !== null ? params.split(",") : [];
 
   const response = await context.next();
   let page = await response.text();

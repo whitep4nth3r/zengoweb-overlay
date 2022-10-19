@@ -17,5 +17,5 @@ Add a comma separated list of character names to a `?wfh` URL parameter.
 For example:
 
 ```text
-https://zengoweb-overlay.netlify.app/?wfh=pikktor,rannien
+https://zengoweb-overlay.netlify.app/?wfh=pikktorr,rannien
 ```

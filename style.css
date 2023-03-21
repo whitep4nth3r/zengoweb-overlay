@@ -44,8 +44,12 @@ body {
   position: relative;
 }
 
+.spring .name {
+  background-image: linear-gradient(45deg, #02a90a, #00ff4c 100%);
+}
+
 .left .name::before {
-  content: "❄️";
+  content: "🐤";
   font-size: 42px;
   position: absolute;
   left: -2rem;
@@ -55,7 +59,7 @@ body {
 }
 
 .right .name::after {
-  content: "❄️";
+  content: "🐤";
   font-size: 42px;
   position: absolute;
   right: -2rem;
@@ -65,7 +69,7 @@ body {
 }
 
 .left .name[data-wfh]::after {
-  content: "🎄";
+  content: "🌱";
   font-size: 42px;
   position: absolute;
   right: -26px;
@@ -75,7 +79,7 @@ body {
 }
 
 .right .name[data-wfh]::before {
-  content: "🎄";
+  content: "🌱";
   font-size: 42px;
   position: absolute;
   left: -32px;

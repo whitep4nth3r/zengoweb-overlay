@@ -1,8 +1,8 @@
 const currentState = {
-  name: "",
+  name: '',
 };
 
-const names = document.querySelectorAll("[data-name]");
+const names = document.querySelectorAll('[data-name]');
 const namesArr = Array.from(names);
 
 function getRandomInt(min, max) {
@@ -14,11 +14,11 @@ function getRandomEntry(array) {
 }
 
 function showPancake(el) {
-  el.style.setProperty("--display", "block");
+  el.style.setProperty('--display', 'block');
 }
 
 function hidePancake(el) {
-  el.style.setProperty("--display", "none");
+  el.style.setProperty('--display', 'none');
 }
 
 function hideAllPancakes() {
@@ -40,5 +40,5 @@ function assignPancakeToRandom() {
 }
 
 setInterval(() => {
-  assignPancakeToRandom(namesArr);
+  assignPancakeToRandom();
 }, 60000);

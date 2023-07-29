@@ -1,3 +1,4 @@
+@import url('fonts.css');
 * {
   box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   height: 1080px;
   padding: 5rem 0;
 }
@@ -48,8 +49,12 @@ body {
   background-image: linear-gradient(45deg, #02a90a, #00ff4c 100%);
 }
 
+.summer .name {
+  background-image: linear-gradient(45deg, #ffe259, #ffa751 100%);
+}
+
 .left .name::before {
-  content: "🐤";
+  content: "🌴";
   font-size: 42px;
   position: absolute;
   left: -2rem;
@@ -59,7 +64,7 @@ body {
 }
 
 .right .name::after {
-  content: "🐤";
+  content: "🌴";
   font-size: 42px;
   position: absolute;
   right: -2rem;
@@ -69,7 +74,7 @@ body {
 }
 
 .left .name[data-wfh]::after {
-  content: "🌱";
+  content: "🍹";
   font-size: 42px;
   position: absolute;
   right: -26px;
@@ -79,11 +84,83 @@ body {
 }
 
 .right .name[data-wfh]::before {
-  content: "🌱";
+  content: "🍹";
   font-size: 42px;
   position: absolute;
   left: -32px;
   top: 0;
   transform: rotate(-15deg);
   display: block;
+}
+
+#h_508kappa, #h_rannien {
+  margin-bottom: 23.9rem;
+}
+
+h1 {
+  position: absolute;
+  right: 3rem;
+  bottom: 16rem;
+  font-size: 3.5rem;
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+h1 span {
+  font-family: "Tilt Neon", cursive;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9; */
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9; */
+  }
 }

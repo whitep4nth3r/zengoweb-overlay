@@ -8,6 +8,7 @@ body {
   height: 1080px;
   width: 1920px;
   font-family: "Figtree", sans-serif;
+  background-image: url('test.jpg');
 }
 
 .container {
@@ -20,18 +21,20 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   height: 1080px;
   padding: 5rem 0;
+  margin-top: 6rem;
 }
 
 .left {
   align-items: flex-end;
   justify-self: flex-end;
+  margin-right: -10rem;
 }
 .right {
   align-items: flex-start;
   justify-self: flex-start;
+  margin-left: 10rem;
 }
 
 .name {
@@ -57,8 +60,31 @@ body {
   background-image: linear-gradient(45deg, #ff8e32, #cf6c09 100%);
 }
 
+.winter .name {
+  background-image: linear-gradient(45deg, #4166cc, #10308a 100%);
+}
+
+.blur {
+  padding: 6rem 6rem;
+  margin-bottom: 2rem;
+  filter: blur(10px);
+  /* background: rgba(0, 0, 0, 0.9) !important; */
+  background: none !important;
+  backdrop-filter: blur(2px);
+}
+
+.left .blur {
+  margin-right: 12rem;
+  margin-top: 2rem;
+}
+
+.right .blur {
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+
 .left .name::before {
-  content: "🌴";
+  content: "❄️";
   font-size: 42px;
   position: absolute;
   left: -2rem;
@@ -68,7 +94,7 @@ body {
 }
 
 .right .name::after {
-  content: "🍺";
+  content: "❄️";
   font-size: 42px;
   position: absolute;
   right: -2rem;
@@ -78,7 +104,7 @@ body {
 }
 
 .left .name[data-wfh]::after {
-  content: "🍂";
+  content: "🏔️";
   font-size: 42px;
   position: absolute;
   right: -26px;
@@ -88,7 +114,7 @@ body {
 }
 
 .right .name[data-wfh]::before {
-  content: "🍹";
+  content: "🏔️";
   font-size: 42px;
   position: absolute;
   left: -32px;
@@ -99,6 +125,10 @@ body {
 
 .mb {
   margin-bottom: 20rem;
+}
+
+.mb-negative {
+  margin-top: -3rem;
 }
 
 .mb-lesser {
@@ -116,6 +146,11 @@ h1 {
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
+}
+
+.winter h1 {
+  color: #aefcff;
+  text-shadow: 0 0 5px #0099ff, 0 0 15px #0099ff, 0 0 20px #0099ff, 0 0 40px #0099ff, 0 0 60px #003cff, 0 0 10px #0051ff, 0 0 98px #003cff;
 }
 
 h1 span {
@@ -138,8 +173,8 @@ h1 span {
   54%,
   56%,
   100% {
-    color: #fff6a9;
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #aefcff;
+    text-shadow: 0 0 5px #0099ff, 0 0 15px #0099ff, 0 0 20px #0099ff, 0 0 40px #0099ff, 0 0 60px #003cff, 0 0 10px #0051ff, 0 0 98px #003cff;
   }
 }
 
@@ -159,7 +194,7 @@ h1 span {
   54%,
   56%,
   100% {
-    color: #fff6a9;
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #aefcff;
+    text-shadow: 0 0 5px #0099ff, 0 0 15px #0099ff, 0 0 20px #0099ff, 0 0 40px #0099ff, 0 0 60px #003cff, 0 0 10px #0051ff, 0 0 98px #003cff;
   }
 }
